@@ -1,0 +1,109 @@
+button {
+    padding: 10px;
+    color: white;
+    background-color: skyblue;
+    border: 1px solid skyblue;
+    border-radius: 4px;
+    margin-top: 5px;
+    width: 100px;
+    margin-right: 50px;
+}
+
+.content {
+    font-family: monospace;
+}
+
+span {
+    margin-left: 35%;
+}
+
+@media screen and (max-device-width: 959px) {
+    .cell {
+        width: 100% !important;
+        height: 50px !important;
+        font-size: 40px !important;
+        text-align: center !important;
+        color: #000 !important;
+        margin-bottom: 5px;
+    }
+
+    .grid {
+        width: 95% !important;
+        margin: 2.5%;
+    }
+
+    .desk-row {
+        display: none !important;
+    }
+
+    .layout {
+        display: inline !important;
+    }
+
+    .mob-row {
+        display: inline !important;
+        margin-left: 40%;
+    }
+
+    button {
+        margin-right: 0 !important;
+    }
+}
+
+@media screen and (min-width: 960px) {
+    .layout {
+        display: none;
+    }
+
+    .cell {
+        width: 230px;
+        height: 150px;
+        font-size: 100px;
+        text-align: center;
+        color: white;
+        display: inline-block;
+    }
+
+    .grid {
+        width: 730px;
+        height: 530px;
+    }
+
+    .layout {
+        display: inline-flex;
+        background-color: #f7f7f7;
+    }
+
+    .mob-row {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 960px) {
+    .layout {
+        display: none;
+    }
+
+    .cell {
+        width: 180px;
+        height: 90px;
+        font-size: 70px;
+        text-align: center;
+        color: white;
+        display: inline-block;
+    }
+
+    .grid {
+        width: 600px;
+        height: 340px;
+    }
+
+    .layout {
+        display: inline-flex;
+        background-color: #f7f7f7;
+    }
+
+    .mob-row {
+        display: none;
+    }
+}
